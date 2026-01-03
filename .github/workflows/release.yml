@@ -1,0 +1,53 @@
+name: Release .NET Game
+
+permissions:
+  contents: write
+
+on:
+  push:
+    tags:
+      - "v*" # Сработает, когда ты создашь тег типа v1.0.0
+
+jobs:
+  build:
+    name: Build for ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            target: linux-x64
+            asset_name: KubikDungeon-Linux
+          - os: windows-latest
+            target: win-x64
+            asset_name: KubikDungeon-Windows.exe
+          - os: macos-latest
+            target: osx-x64
+            asset_name: KubikDungeon-macOS
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x' # Используем стабильную версию (или 9.0, если у тебя новее)
+
+      - name: Publish (Compile to single file)
+        # Команда собирает всё в один файл, включая библиотеки .NET (self-contained)
+        run: dotnet publish -c Release -r ${{ matrix.target }} --self-contained true -p:PublishSingleFile=true -p:PublishTrimmed=true -o ./publish
+
+      # Для Windows и Linux переименовываем файл, чтобы было красиво
+      - name: Rename Binary (Unix)
+        if: matrix.os != 'windows-latest'
+        run: mv ./publish/KubikDungeon ./publish/${{ matrix.asset_name }}
+
+      - name: Rename Binary (Windows)
+        if: matrix.os == 'windows-latest'
+        run: move .\publish\KubikDungeon.exe .\publish\${{ matrix.asset_name }}
+
+      - name: Upload to Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ./publish/${{ matrix.asset_name }}
