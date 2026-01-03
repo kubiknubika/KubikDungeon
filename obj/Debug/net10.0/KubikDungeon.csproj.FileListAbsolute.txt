@@ -1,0 +1,15 @@
+/workspaces/KubikDungeon/bin/Debug/net10.0/KubikDungeon
+/workspaces/KubikDungeon/bin/Debug/net10.0/KubikDungeon.deps.json
+/workspaces/KubikDungeon/bin/Debug/net10.0/KubikDungeon.runtimeconfig.json
+/workspaces/KubikDungeon/bin/Debug/net10.0/KubikDungeon.dll
+/workspaces/KubikDungeon/bin/Debug/net10.0/KubikDungeon.pdb
+/workspaces/KubikDungeon/obj/Debug/net10.0/KubikDungeon.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/KubikDungeon/obj/Debug/net10.0/KubikDungeon.AssemblyInfoInputs.cache
+/workspaces/KubikDungeon/obj/Debug/net10.0/KubikDungeon.AssemblyInfo.cs
+/workspaces/KubikDungeon/obj/Debug/net10.0/KubikDungeon.csproj.CoreCompileInputs.cache
+/workspaces/KubikDungeon/obj/Debug/net10.0/KubikDungeon.sourcelink.json
+/workspaces/KubikDungeon/obj/Debug/net10.0/KubikDungeon.dll
+/workspaces/KubikDungeon/obj/Debug/net10.0/refint/KubikDungeon.dll
+/workspaces/KubikDungeon/obj/Debug/net10.0/KubikDungeon.pdb
+/workspaces/KubikDungeon/obj/Debug/net10.0/KubikDungeon.genruntimeconfig.cache
+/workspaces/KubikDungeon/obj/Debug/net10.0/ref/KubikDungeon.dll

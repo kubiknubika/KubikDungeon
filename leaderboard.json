@@ -1,0 +1,79 @@
+[
+  {
+    "Name": "Bot_Cautious",
+    "ClassName": "Mage",
+    "Level": 15,
+    "Room": 205,
+    "Date": "03.01.2026 01:32"
+  },
+  {
+    "Name": "NeuroBot_v3",
+    "ClassName": "Mage",
+    "Level": 12,
+    "Room": 100,
+    "Date": "03.01.2026 02:02"
+  },
+  {
+    "Name": "Bot_Crazy",
+    "ClassName": "Warrior",
+    "Level": 11,
+    "Room": 91,
+    "Date": "03.01.2026 01:48"
+  },
+  {
+    "Name": "Bot_Gambler",
+    "ClassName": "Rogue",
+    "Level": 11,
+    "Room": 90,
+    "Date": "03.01.2026 01:48"
+  },
+  {
+    "Name": "NeuroBot_v2",
+    "ClassName": "Mage",
+    "Level": 10,
+    "Room": 70,
+    "Date": "03.01.2026 02:00"
+  },
+  {
+    "Name": "NeuroBot_v1",
+    "ClassName": "Warrior",
+    "Level": 9,
+    "Room": 51,
+    "Date": "03.01.2026 01:51"
+  },
+  {
+    "Name": "Bot_Madman",
+    "ClassName": "Warrior",
+    "Level": 8,
+    "Room": 40,
+    "Date": "03.01.2026 01:22"
+  },
+  {
+    "Name": "Bot_Farmer",
+    "ClassName": "Warrior",
+    "Level": 9,
+    "Room": 40,
+    "Date": "03.01.2026 01:48"
+  },
+  {
+    "Name": "Bot_Survivor",
+    "ClassName": "Mage",
+    "Level": 7,
+    "Room": 26,
+    "Date": "03.01.2026 01:22"
+  },
+  {
+    "Name": "\u041A\u0443\u0431\u0438\u043A",
+    "ClassName": null,
+    "Level": 5,
+    "Room": 24,
+    "Date": "03.01.2026 01:01"
+  },
+  {
+    "Name": "\u041A\u0443\u0431\u0438\u043A",
+    "ClassName": "Warrior",
+    "Level": 3,
+    "Room": 6,
+    "Date": "03.01.2026 01:18"
+  }
+]
